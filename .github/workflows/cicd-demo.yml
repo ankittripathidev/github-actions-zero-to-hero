@@ -1,0 +1,37 @@
+# Workflow Name
+name: CICD
+
+# Triggers on
+on:
+  workflow_dispatch:
+
+# Jobs
+jobs:
+  # Job.1
+  code-clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the Code
+        run: echo "Cloning the Code"
+
+  # Job.2
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Using Docker
+        run: echo "Building Docker Image"
+
+  # Job.3
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Code Quality
+        run: echo "Test the Code Quality"
+
+  # Job.4
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy on Machine
+        run: echo "Deploying code on Machine"
+        

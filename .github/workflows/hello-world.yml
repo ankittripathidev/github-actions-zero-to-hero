@@ -1,0 +1,15 @@
+# Workflow Name
+name: Hello
+
+# Trigger On
+on:
+  workflow_dispatch: 
+
+# Jobs
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Bolo
+        run: echo "Hello World"
+  

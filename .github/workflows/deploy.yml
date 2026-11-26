@@ -1,0 +1,11 @@
+name: DEPLOY
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy on Machine
+        run: echo "Deploying the Code"
